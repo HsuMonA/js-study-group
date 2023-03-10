@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Warmer - E1</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Purchase Receipt</h1>
 
-    <title>Coding Warmer - E1 </title>
-</head>
-<body>
-    
-   
-        <h1>Purchase Receipt</h1>
-        
-       
-        <section>
-            <div> 
-             <div>
-                 <ion-label>Article:</ion-label>
-             </div>
-               <div>
-                  <input placeholder="Example: Apples" id="description"/>
-               </div>
-            </div>
+      <section>
+        <div id="article">
+          <div class="article-label">
+            <ion-label>Article:</ion-label>
+          </div>
+          <div class="article-name">
+            <input placeholder="Example: Apples" id="description" />
+          </div>
+        </div>
 
-            <div>
-                <div>
-                    <ion-label>Amount:</ion-label>
-                </div>
-                <div>
-                    <ion-input placeholder="Example: $3" id="amount"></ion-input>
-                </div>
-            </div>
+        <div id="amount">
+          <div id="amount-label">
+            <ion-label>Amount:</ion-label>
+          </div>
+          <div id="amount-number">
+            <input type="number" placeholder="Example: $3" id="amount" />
+          </div>
+        </div>
 
-            <div>
-                <div>
-                    <button>Calculate Total</button>
-                </div>
-            </div>
+        <div id="button">
+          <div>
+            <button type="button" onclick="addListItem()">
+              Calculate Total
+            </button>
+          </div>
+        </div>
 
-            <div>
-                <div>
-                    <ul id="ticket">
-                        <!--List of ticket articles here-->
-                    </ul>
-                </div>
-            </div>
-            <p id="total">
-                Total: <!--Total here-->
-            </p>
-        </section>
-    
-</body>
-<script src="index.js"></script>
+        <div id="ticket-box">
+          <h2>======= Your RECEIPT ==========</h2>
+          <div>
+            <ul id="ticket">
+              <!--List of ticket articles here-->
+            </ul>
+          </div>
+        </div>
+        <p id="total">
+          Total:
+          <!--Total here-->
+        </p>
+      </section>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
