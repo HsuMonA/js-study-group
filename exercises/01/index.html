@@ -12,45 +12,41 @@
   </head>
   <body>
     <div class="container">
-      <h1>Purchase Receipt</h1>
+      <!-- <h1>Purchase Receipt</h1> -->
 
       <section>
-        <div id="article">
+        <div class="article-amount-grid">
           <div class="article-label">
-            <ion-label>Article:</ion-label>
+            <ion-label>Article</ion-label>
           </div>
           <div class="article-name">
-            <input placeholder="Example: Apples" id="description" />
+            <input type="text" placeholder="Example: Apples" id="description" />
           </div>
-        </div>
 
-        <div id="amount">
-          <div id="amount-label">
-            <ion-label>Amount:</ion-label>
+          <div class="amount-label">
+            <ion-label>Amount</ion-label>
           </div>
-          <div id="amount-number">
+          <div class="amount-number">
             <input type="number" placeholder="Example: $3" id="amount" />
           </div>
         </div>
-
         <div id="button">
           <div>
-            <button type="button" onclick="addListItem()">
+            <button class="button" type="button" onclick="addListItem()">
               Calculate Total
             </button>
           </div>
         </div>
 
         <div id="ticket-box">
-          <h2>======= Your RECEIPT ==========</h2>
-          <div>
-            <ul id="ticket">
-              <!--List of ticket articles here-->
-            </ul>
-          </div>
+          <p>======= Your RECEIPT ==========</p>
+          <ul id="ticket" class="ticket">
+            <!--List of ticket articles here-->
+          </ul>
         </div>
+        <hr />
         <p id="total">
-          Total:
+          TOTAL
           <!--Total here-->
         </p>
       </section>

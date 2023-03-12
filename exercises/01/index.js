@@ -36,14 +36,14 @@ function addListItem() {
   const sum = sumAmount();
   // const divForTotalAmount = document.createElement("div");
   // const sumTextNode = document.createTextNode(sum);
-  let text = "Total: $ ";
-  
+  let text = "TOTAL $ ";
+
   text += sum;
   // document.querySelector("#total").firstChild.data = text;
   //document.querySelector('#total').innerHTML = "Total: $ ", sumTextNode;
   // divForTotalAmount.appendChild(totalAmountText);
   // document.querySelector("#total").appendChild(divForTotalAmount);
-  document.querySelector('#total').innerHTML = text;
+  document.querySelector("#total").innerHTML = text;
   // document.querySelector("#total").innerText = "Hello <br> World";
 }
 

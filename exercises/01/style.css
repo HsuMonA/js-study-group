@@ -3,42 +3,76 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  font-size: 400;
 }
 
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
-  margin: 2rem;
-  text-align: center;
-  background-color: black;
+  margin-top: 3rem;
 }
 
-.container {
-  display: block;
-  background-color: white;
-  width: 35rem;
+#description {
+  width: 209px;
+  height: 28px;
+  background: #d9d9d9;
+  border: none;
+}
+#amount {
+  width: 209px;
+  height: 29px;
+  background: #d9d9d9;
+  border: none;
 }
 
-#article{
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-}
 .article-label {
-  display: inline-block;
-  border: 1px solid red;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+  grid-area: article;
+  text-align: right;
+  align-self: end;
 }
 .article-name {
-  display: inline-block;
-  border: 1px solid red;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+  grid-area: article-name;
+  text-align: left;
+}
+
+.amount-label {
+  grid-area: amount;
+  text-align: right;
+  align-self: end;
+}
+.amount-number {
+  grid-area: amount-number;
+  text-align: left;
+}
+
+.article-amount-grid {
+  display: grid;
+  margin-top: 3rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "article article-name"
+    "amount amount-number";
+}
+
+.button {
+  background-color: #620d4f;
+  color: #ffffff;
+  width: 19rem;
+  height: 2.25rem;
+  font-size: 1.25rem;
+  border-radius: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+hr {
+  border: 2px solid #000000;
+}
+#total {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
 }
