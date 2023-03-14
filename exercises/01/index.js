@@ -22,6 +22,7 @@ function addListItem() {
 
   // create div and add $ in the div
   const divForDollar = document.createElement("div");
+  divForDollar.classList.add("dollar-sign");
   const dollar = document.createTextNode("$");
   divForDollar.appendChild(dollar);
 
@@ -36,7 +37,7 @@ function addListItem() {
   const sum = sumAmount();
   // const divForTotalAmount = document.createElement("div");
   // const sumTextNode = document.createTextNode(sum);
-  let text = "TOTAL $ ";
+  let text = "TOTAL $";
 
   text += sum;
   // document.querySelector("#total").firstChild.data = text;
@@ -65,8 +66,3 @@ function sumAmount() {
   // create div and add sum in the div
   //const divForSum = document.createElement("div");
 }
-
-// click the calculate button
-// display the article and amount
-// sum the amount
-// display the total amount
