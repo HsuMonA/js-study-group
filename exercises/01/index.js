@@ -35,34 +35,17 @@ function addListItem() {
   document.querySelector("#ticket").appendChild(li);
 
   const sum = sumAmount();
-  // const divForTotalAmount = document.createElement("div");
-  // const sumTextNode = document.createTextNode(sum);
   let text = "TOTAL $";
-
   text += sum;
-  // document.querySelector("#total").firstChild.data = text;
-  //document.querySelector('#total').innerHTML = "Total: $ ", sumTextNode;
-  // divForTotalAmount.appendChild(totalAmountText);
-  // document.querySelector("#total").appendChild(divForTotalAmount);
   document.querySelector("#total").innerHTML = text;
-  // document.querySelector("#total").innerText = "Hello <br> World";
 }
 
 function sumAmount() {
   // get the amount
-  // let amountArray = document.querySelectorAll("#ticket > li > div:last-child");
   let amountArray = document.querySelectorAll("#ticket > li > div:last-child");
   let sum = 0;
-  // let result = amountArray.reduce(
-  //   (accumulator, currentValue) => accumulator + currentValue,
-  //   sum
-  // );
-  // return result;
-  // sum the amount
   for (let i = 0; i < amountArray.length; i++) {
     sum += Number(amountArray[i].innerHTML);
   }
   return sum;
-  // create div and add sum in the div
-  //const divForSum = document.createElement("div");
 }
